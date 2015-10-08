@@ -4,8 +4,6 @@
 
 int inNumHolder = 0;                                            // Variable that will hold the int that is inputted
 
-int primeChecker(int prime);                                    // 0 = False, 1 = True
-
 int main()
 {
     while(1)
@@ -21,10 +19,11 @@ int main()
     return 0;
 }
 
-int primeChecker(int prime) {
-    for(int i=2; i < sqrt(prime);i ++;)
+int primeChecker(unsigned int prime) {
+    unsigned int i;
+    for( i=2; i < prime;i ++)
     {
         if (prime % i == 0) return 0;
-        else return 1;
     }
+        return 1;
 }
