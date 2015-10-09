@@ -19,8 +19,8 @@ int main()
     return 0;
 }
 
-int primeChecker(unsigned int prime) {
-    unsigned int i;
+int primeChecker(unsigned long prime) {
+    unsigned long i;
     for( i=2; i < prime;i ++)
     {
         if (prime % i == 0) return 0;
