@@ -2,14 +2,14 @@
 #include <stdlib.h>
 #include <math.h>
 
-int inNumHolder = 0;                                            // Variable that will hold the int that is inputted
+char inNumHolder[30];                                            // Variable that will hold the int that is inputted
 
 int main()
 {
     while(1)
     {
         printf("Input an integer above 1 to check if it is prime.\n");
-        scanf("%d",&inNumHolder);
+        scanf("%f",&inNumHolder);
         printf("The number you pressed is %d.\nChecking that number.\n",inNumHolder);
 
         if (primeChecker(inNumHolder) == 0) printf("%d is not a prime number.\n",inNumHolder);
@@ -26,4 +26,9 @@ int primeChecker(unsigned long prime) {
         if (prime % i == 0) return 0;
     }
         return 1;
+}
+
+int inputCheck(char chk) {
+
+
 }
