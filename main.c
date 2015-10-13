@@ -38,8 +38,10 @@ int primeChecker(unsigned long prime) {
 }
 
 int inputCheck(char chk) {
-    switch chk
+    switch (chk)
     {
+    case '0' :
+        break;
     case '1' :
         break;
     case '2' :
@@ -50,6 +52,16 @@ int inputCheck(char chk) {
         break;
     case '5' :
         break;
+    case '6' :
+        break;
+    case '7' :
+        break;
+    case '8' :
+        break;
+    case '9' :
+        break;
+    default :
+        return -1;
     }
 
 }
