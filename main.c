@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
+#include "main.h"
 
 char inNumHolder[30];                                            // Variable that will hold the int that is inputted
 
@@ -21,6 +22,7 @@ int main()
 
     return 0;
 }
+<<<<<<< HEAD
 
 /*
 primeChecker() uses a for loop to check each number below the number inputted into the function.
