@@ -22,7 +22,6 @@ int main()
 
     return 0;
 }
-<<<<<<< HEAD
 
 /*
 primeChecker() uses a for loop to check each number below the number inputted into the function.
@@ -37,33 +36,4 @@ int primeChecker(unsigned long prime) {
         if (prime % i == 0) return 0;       // If the remainder of var prime and var i is 0 than not prime
     }
         return 1;                           // Otherwise it is prime.
-}
-
-int inputCheck(char chk) {
-    switch (chk)
-    {
-    case '0' :
-        break;
-    case '1' :
-        break;
-    case '2' :
-        break;
-    case '3' :
-        break;
-    case '4' :
-        break;
-    case '5' :
-        break;
-    case '6' :
-        break;
-    case '7' :
-        break;
-    case '8' :
-        break;
-    case '9' :
-        break;
-    default :
-        return -1;
-    }
-
 }
