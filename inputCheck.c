@@ -25,5 +25,6 @@ int inputCheck(char chk) {
     default :
         return -1;
     }
+    return 1;
 
 }
