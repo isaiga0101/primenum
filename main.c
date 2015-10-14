@@ -23,17 +23,4 @@ int main()
     return 0;
 }
 
-/*
-primeChecker() uses a for loop to check each number below the number inputted into the function.
-If the remainder of the number being checked divided by a number less than it is 0 than it is not
-prime. The function returns 0 if it is not prime, and 1 if it is prime. This function only uses unsigned
-variable because it does not need to check negative numbers.
-*/
-int primeChecker(unsigned long prime) {
-    unsigned long i;
-    for( i=2; i < prime;i ++)
-    {
-        if (prime % i == 0) return 0;       // If the remainder of var prime and var i is 0 than not prime
-    }
-        return 1;                           // Otherwise it is prime.
-}
+
