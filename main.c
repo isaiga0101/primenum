@@ -18,9 +18,9 @@ int main()
         scanf("%s",&inNumHolder);                                                                       // Stores the value of the integer to inNumHolder variable
         printf("The number you pressed is %s.\nChecking that number.\n",inNumHolder);                   // Outputs what number is pressed.
 
-        while(inNumHolder[loop] != NULL && check == true)                                                   // Loops while there are still characters to check
+        while(inNumHolder[loop] != 0 && check == true)                                                   // Loops while there are still characters to check
         {
-            if (inputCheck(inNumHolder[loop]) != 0) {
+            if (inputCheck(inNumHolder[loop]) != true) {
                 valid = false;
                 check = false;
             }
@@ -28,12 +28,15 @@ int main()
             loop ++;
         }
 
-        if (valid = true) {
+        if (valid == true) {
             // if/else statement uses primeChecker() function to check if the number is prime and outputs whether it is prime.
             if (primeChecker(inNumHolder) == 0) printf("%s is not a prime number.\n",inNumHolder);
             else printf("%s is a prime number.\n", inNumHolder);
         }
-        else printf("Fatal error: Not a valid integer.");
+        else
+        {
+            printf("Fatal error: Not a valid integer.\n");
+        }
     }
 
     return 0;
