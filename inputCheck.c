@@ -1,5 +1,7 @@
+#include <stdbool.h>
 #include "main.h"
-int inputCheck(char chk) {
+
+bool inputCheck(char chk) {
     switch (chk)
     {
     case '0' :
@@ -23,8 +25,8 @@ int inputCheck(char chk) {
     case '9' :
         break;
     default :
-        return -1;
+        return false;
     }
-    return 1;
+    return true;
 
 }
