@@ -5,6 +5,7 @@
 #include "main.h"
 
 char inNumHolder[30];                                            // Variable that will hold the int that is inputted
+int prime_intHolder;
 int loop = 0;
 bool check = true;
 bool valid = true;
@@ -30,8 +31,9 @@ int main()
 
         if (valid == true) {
             // if/else statement uses primeChecker() function to check if the number is prime and outputs whether it is prime.
-            if (primeChecker(inNumHolder) == 0) printf("%s is not a prime number.\n",inNumHolder);
-            else printf("%s is a prime number.\n", inNumHolder);
+            prime_intHolder = StrConversion(inNumHolder);
+            if (primeChecker(prime_intHolder) == 0) printf("%d is not a prime number.\n",prime_intHolder);
+            else printf("%d is a prime number.\n", prime_intHolder);
         }
         else
         {
