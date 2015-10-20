@@ -13,17 +13,19 @@ int StrConversion(char inStr[50])
         str_length ++;
     }
 
-    printf("str_length = %d", str_length);
+    printf("str_length = %d\n", str_length);
 
     while (str_length > 0)
     {
+        printf("Inside StrConversion() main loop\n");
         // Algorithm for assigning value to multiplier variable
         multiplier = 1;
         for (int x = 1;x = str_length;x ++)
         {
+            printf("x = %d\n",x);
             multiplier *= 10;
         }
-
+        printf("Multiplier = &d\n",multiplier);
         switch (str_length)
         {
         case '1' :
