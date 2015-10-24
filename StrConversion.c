@@ -4,8 +4,9 @@ int StrConversion(char inStr[50])
 {
     int str_length = 0;             // Length of string
     int convert_int = 0;
+    int strLnth_dynamic;
     int multiplier;
-    int loop = 0;                   // Holds the number of times the main while() loop loops.
+    int loop;                   // Holds the number of times the main while() loop loops.
 
     // While loop keeps looping
     while (inStr[str_length] != 0 || inStr[str_length] == " ")
@@ -13,21 +14,23 @@ int StrConversion(char inStr[50])
         str_length ++;
     }
     str_length --;
+    strLnth_dynamic = str_length;
 
     printf("str_length = %d\n", str_length);
+    loop = 0;
     // Main loop
     while (loop <= str_length)
     {
         printf("Inside StrConversion() main loop\n");
         // Algorithm for assigning value to multiplier variable
         multiplier = 1;
-        for (int x = 0;x == loop;x ++)
+        for (int x = 0;x <= strLnth_dynamic - 1;x ++)
         {
-            printf("x = %d\n",x);
             multiplier *= 10;
+            printf("x = %d\n",x);
         }
         printf("Multiplier = %d\n",multiplier);
-        switch (inStr[str_length-1])
+        switch (inStr[loop])
         {
         case '1' :
             convert_int += multiplier;
@@ -74,6 +77,7 @@ int StrConversion(char inStr[50])
             break;
         }
         loop ++;
+        strLnth_dynamic --;
     }
 
     return convert_int;
