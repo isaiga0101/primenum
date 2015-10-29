@@ -20,7 +20,7 @@ int main()
         scanf("%s",&inNumHolder);                                                                       // Stores the value of the integer to inNumHolder variable
         printf("The number you pressed is %s.\nChecking that number.\n",inNumHolder);                   // Outputs what number is pressed.
         if (inNumHolder[0] == '0') {
-            check == false;
+            check = false;
             valid = false;
             printf("Integer 0 cannot be checked for primality.\n");
         }
