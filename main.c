@@ -16,7 +16,7 @@ int main()
     while(1)
     {
         valid = true;
-        printf("Input an integer above 1 to check if it is prime.\n");                                  // Prompts the user to input an integer
+        printf("Input an integer above 1 to check if it is prime.\n>> ");                               // Prompts the user to input an integer
         scanf("%s",&inNumHolder);                                                                       // Stores the value of the integer to inNumHolder variable
         printf("The number you pressed is %s.\nChecking that number.\n",inNumHolder);                   // Outputs what number is pressed.
         if (inNumHolder[0] == '0') {
@@ -24,7 +24,7 @@ int main()
             valid = false;
             printf("Integer 0 cannot be checked for primality.\n");
         }
-        while(inNumHolder[loop] != 0 && check == true)                                                   // Loops while there are still characters to check
+        while(inNumHolder[loop] != 0 && check == true)                                                  // Loops while there are still characters to check
         {
             if (inputCheck(inNumHolder[loop]) != true) {
                 valid = false;
