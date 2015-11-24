@@ -5,6 +5,7 @@
 #include "main.h"
 
 char inNumHolder[30];                                            // Variable that will hold the int that is inputted
+char exitCmd[5] = {"exit"};
 int prime_intHolder;
 int loop = 0;
 bool check = true;
