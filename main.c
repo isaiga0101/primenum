@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
+#include <string.h>
 #include <stdbool.h>
 #include "main.h"
 
@@ -20,7 +21,8 @@ int main()
         loop = 0;
         check = true;
         printf("Input an integer above 1 to check if it is prime.\n>> ");                               // Prompts the user to input an integer
-        scanf("%s",&inNumHolder);                                                                       // Stores the value of the integer to inNumHolder variable
+        scanf("%s",&inNumHolder);
+        if (strcmp(exitCmd,inNumHolder) == 0) return 0;                                                                    // Stores the value of the integer to inNumHolder variable
         printf("The number you pressed is %s.\nChecking that number.\n",inNumHolder);                   // Outputs what number is pressed.
         if (inNumHolder[0] == '0') {
             check = false;
