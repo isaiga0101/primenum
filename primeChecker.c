@@ -1,4 +1,4 @@
-#include "main.h"
+#include "mainlib.h"
 int primeChecker(unsigned long prime) {
     unsigned long i;
     for( i=2; i <= sqrtl(prime);i ++)

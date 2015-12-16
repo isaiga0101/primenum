@@ -1,4 +1,4 @@
-#include "main.h"
+#include "mainlib.h"
 
 int StrConversion(char inStr[50])
 {

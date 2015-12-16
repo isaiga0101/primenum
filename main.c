@@ -3,7 +3,7 @@
 #include <math.h>
 #include <string.h>
 #include <stdbool.h>
-#include "main.h"
+#include "mainlib.h"
 
 char inNumHolder[30];                                            // Variable that will hold the int that is inputted
 char exitCmd[5] = {"exit"};

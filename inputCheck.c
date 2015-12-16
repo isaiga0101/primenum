@@ -1,5 +1,5 @@
 #include <stdbool.h>
-#include "main.h"
+#include "mainlib.h"
 
 bool inputCheck(char chk) {
     switch (chk)
