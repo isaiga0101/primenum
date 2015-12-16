@@ -3,4 +3,6 @@
 *.depend
 *bin/
 *obj/
-*main
+*primecheck
+*.o
+*~
