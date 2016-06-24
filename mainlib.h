@@ -1,6 +1,9 @@
 #ifndef MAIN_H_INCLUDED
 #define MAIN_H_INCLUDED
 #include <stdbool.h>
+#include <string.h>
+#include <stdio.h>
+
 /*
 primeChecker() uses a for loop to check each number below the number inputted into the function.
 If the remainder of the number being checked divided by a number less than it is 0 than it is not
@@ -9,5 +12,6 @@ variable because it does not need to check negative numbers.
 */
 int primeChecker(long unsigned prime);
 bool inputCheck(char chk);
+int StrConversion(char inStr[50]);
 
 #endif // MAIN_H_INCLUDED
